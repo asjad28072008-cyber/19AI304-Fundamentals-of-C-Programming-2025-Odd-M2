@@ -198,16 +198,7 @@ int main() {
 ```
 # Output:
 
-
-
-
-
-
-
-
-
-
-
+<img width="276" height="88" alt="Screenshot 2026-05-30 231348" src="https://github.com/user-attachments/assets/07efb12a-0d88-4c99-8048-a68ce7611559" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -256,7 +247,47 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int i, j, n, k;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    i = 1;
+
+    while (i <= n) {
+        for (j = i; j <= n; j++) {
+            if (i == 1 || j == i) {
+                printf("%d", j);
+            } else {
+                printf(" ");
+            }
+        }
+
+        k = j - 2;
+
+        for (j = 1; j <= i - 1; j++) {
+            if (i == n || j == i - 1) {
+                printf("%d", k);
+            } else {
+                printf(" ");
+            }
+            k--; 
+        }
+
+        printf("\n");
+        i++;
+    }
+
+    return 0;
+}
+```
 # Output:
+
+<img width="362" height="191" alt="image" src="https://github.com/user-attachments/assets/19cfdabc-c9d6-4ed6-a333-52571b09d156" />
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -310,6 +341,36 @@ Thus, the program was implemented and executed successfully, and the required ou
   Decrease i by 1 and go back to Step 6.
 ### Step 8:
   Stop
+# Program:
+```
+#include <stdio.h>
+
+int main() {
+    int i, j;
+
+    printf("0\n");
+
+    i = 7;
+
+    while (i >= 1) {
+        for (j = i; j <= 7; j++) {
+            printf("%d ", j);
+        }
+        printf("0 ");
+
+        for (j = 7; j >= i; j--) {
+            printf("%d ", j);
+        }
+        printf("\n");
+        i--;
+    }
+    return 0;
+}
+```
+# Output:
+
+<img width="556" height="267" alt="image" src="https://github.com/user-attachments/assets/68b8f43c-625e-445d-99c1-87094996fcf0" />
+
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
